@@ -3,6 +3,9 @@ export interface CustomButtonProps {
   title: string;
   containerStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
-  type?: "button" | "submit" | 
+  type?: "button" | "submit"  ;
 }
-s
+export interface SearchManfucturerProps {
+  manfucturer: string;
+  setManfucturer: (manfucturer: string) => void
+}
