@@ -3,26 +3,33 @@ export interface CustomButtonProps {
   title: string;
   containerStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
-  type?: "button" | "submit"  ;
-  textStyles?: string
-  rightIcon?:string
-  isDisabled?: boolean
+  type?: "button" | "submit";
+  textStyles?: string;
+  rightIcon?: string;
+  isDisabled?: boolean;
 }
 export interface SearchManfucturerProps {
   manfucturer: string;
-  setManfucturer: (manfucturer: string) => void
+  setManfucturer: (manfucturer: string) => void;
 }
 export interface CarProps {
-  city_mpg:number,
-  class:string,
-  combination_mpg:number,
-  cylinders:number,
-  displacement:number,
-  drive:string,
-  fuel_type:string,
-  highway_mpg:number,
-  make:string,
-  model:string,
-  transmission:string,
-  year:number,
+  city_mpg: number;
+  class: string;
+  combination_mpg: number;
+  cylinders: number;
+  displacement: number;
+  drive: string;
+  fuel_type: string;
+  highway_mpg: number;
+  make: string;
+  model: string;
+  transmission: string;
+  year: number;
+}
+export interface FilterProps {
+  manfucturer: string;
+  year: number;
+  fuel: string;
+  limit: number;
+  model: string;
 }
